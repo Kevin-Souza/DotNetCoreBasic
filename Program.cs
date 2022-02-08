@@ -32,7 +32,14 @@ namespace Revisao
                         indiceAluno++;
                         break;
                     case "2":
-                        //TODO: listar alunos
+                        foreach(var a in alunos)
+                        {
+                            if (!string.IsNullOrEmpty(a.Nome)) // Se o nome não for Vazio, O ! torna uma expresão negativa
+                            {
+                                Console.WriteLine($"Aluno: {a.Nome} -- Nota: {a.Nota}");
+                            }
+                            
+                        }
                         break;
                     case "3":
                         //TODO: calcular media geral
